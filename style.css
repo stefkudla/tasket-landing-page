@@ -196,7 +196,7 @@ header {
   color: rgba(9, 9, 121, 1);
   background: transparent;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     200deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(9, 9, 121, 1) 35%,
@@ -204,7 +204,7 @@ header {
   );
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 
   margin-left: 20px;
 }
