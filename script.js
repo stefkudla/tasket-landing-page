@@ -32,11 +32,11 @@ setActive(mainNav);
 mobileMenuBtn.onclick = () => toggleMobileNav();
 closeMenuBtn.onclick = () => toggleMobileNav();
 
-function smoothScroll() {
-  learnMoreBtn.onclick = () => {
+function smoothScroll(el) {
+  el.onclick = () => {
     document
       .querySelector('.section--about')
       .scrollIntoView({ behavior: 'smooth' });
   };
 }
-document.location.pathname === '/index.html' && smoothScroll();
+if (learnMoreBtn) smoothScroll(learnMoreBtn);
