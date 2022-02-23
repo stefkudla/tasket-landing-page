@@ -46,6 +46,64 @@
       </nav>
     </div>
 
+    <div class="cta-form-card-container">
+      <div
+        class="close-button"
+        id="cta-form-close-btn"
+        onclick="closeCtaModal()"
+      >
+        <button>
+          <i class="fa fa-close"></i>
+        </button>
+      </div>
+      <form action="" method="get" class="cta-form">
+        <h4 class="form--heading">Get Tasket</h4>
+
+        <div class="cta-component-wrapper">
+          <label for="name">
+            <i class="fa-solid fa-address-book form-icon"></i>
+          </label>
+          <input
+            type="text"
+            name="name"
+            id=""
+            class="cta-input"
+            placeholder="name"
+          />
+        </div>
+
+        <div class="cta-component-wrapper">
+          <label for="email">
+            <i class="fa-solid fa-at form-icon"></i>
+          </label>
+          <input
+            type="email"
+            name="email"
+            id=""
+            class="cta-input"
+            placeholder="email"
+          />
+        </div>
+
+        <div class="cta-component-wrapper">
+          <label for="password">
+            <i class="fa-solid fa-lock form-icon"></i>
+          </label>
+          <input
+            type="password"
+            name="password"
+            id=""
+            class="cta-input"
+            placeholder="password"
+          />
+        </div>
+
+        <div class="cta-component-wrapper">
+          <button type="submit" class="form-button">Sign Up</button>
+        </div>
+      </form>
+    </div>
+
     <div id="container">
       <header>
         <div class="logo--container">
@@ -70,7 +128,9 @@
         </div>
 
         <div class="button--container">
-          <button class="nav-button">Get Started</button>
+          <button class="nav-button cta-button" onclick="openCtaModal()">
+            Get Started
+          </button>
         </div>
       </header>
 
@@ -285,7 +345,13 @@
           <div class="cta--card">
             <h3 class="section--headline cta--headline">Get Tasket Now!</h3>
             <p class="cta--description">30 day Money-back Guarantee!</p>
-            <button href="#" class="cta--button raised">Get Started</button>
+            <button
+              href="#"
+              class="cta-button cta-button-white raised"
+              onclick="openCtaModal()"
+            >
+              Get Started
+            </button>
           </div>
         </section>
       </main>
